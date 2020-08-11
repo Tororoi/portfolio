@@ -17,7 +17,9 @@ class App extends React.Component {
     return (
       <div className="App">
         <Router>
-          <NavBar/>
+          <div className="navbar">
+            <NavBar/>
+          </div>
         <header className="App-header">
           <img src={'./blackburnian.png'} className="App-logo" alt="logo" />
           <p>

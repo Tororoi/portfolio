@@ -19,8 +19,15 @@
 
 /* Navigation */
 
+.navbar {
+  display: flex;
+}
+
 .nav {
   list-style-type: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin: 0;
   padding: 0;
   overflow: hidden;
@@ -30,11 +37,29 @@
   width: 100%;
 }
 
-.nav .navlink {
+.person {
   float: left;
   display: block;
+  margin-left: 32px;
+  margin-right: 32px;
+  color: white;
+  font-size: 24px;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 14px 16px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: 0.2s ease-out;
+}
+
+.navlink {
+  float: left;
+  display: block;
+  margin-left: 32px;
+  margin-right: 32px;
   color: white;
   text-align: center;
+  text-transform: uppercase;
   padding: 14px 16px;
   text-decoration: none;
   cursor: pointer;

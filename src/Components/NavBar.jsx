@@ -7,20 +7,25 @@ import {connect} from 'react-redux'
 const NavBar = (props) => {
 
     return(
-      <ul className="nav">
-        <li>
-          <NavLink className="navlink" to="/">Main</NavLink>
-        </li>
-        <li>
-          <NavLink className="navlink" to="/projects">Projects</NavLink>
-        </li>
-        <li>
-          <NavLink className="navlink" to="/resume">Resume</NavLink>
-        </li>
-        <li>
-          <NavLink className="navlink" to="/blogs">Blogs</NavLink>
-        </li>
-      </ul>
+        <>
+        <ul className="nav">
+            <li>
+            <NavLink className="person" to="/">Thomas Cantwell</NavLink>
+            </li>
+            <li>
+            <NavLink className="navlink" to="/">Main</NavLink>
+            </li>
+            <li>
+            <NavLink className="navlink" to="/projects">Projects</NavLink>
+            </li>
+            <li>
+            <NavLink className="navlink" to="/resume">Resume</NavLink>
+            </li>
+            <li>
+            <NavLink className="navlink" to="/blogs">Blogs</NavLink>
+            </li>
+        </ul>
+        </>
     )
   };
 
