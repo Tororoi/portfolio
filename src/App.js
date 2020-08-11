@@ -1,6 +1,9 @@
 import React from 'react';
 import './App.css';
 import NavBar from './Components/NavBar'
+import ProjectContainer from './Components/ProjectContainer'
+import Resume from './Components/Resume'
+import BlogContainer from './Components/BlogContainer'
 
 import {connect} from 'react-redux'
 
@@ -34,7 +37,7 @@ class App extends React.Component {
              <Resume/>
             } />
             <Route path="/blogs" exact render={() =>
-             <ProjectDisplay/>
+             <BlogContainer/>
             } />
            <Route path="/" exact render={() =>
              <ProjectContainer/>
