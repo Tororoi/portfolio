@@ -20,12 +20,26 @@ class App extends React.Component {
           <div className="navbar">
             <NavBar/>
           </div>
-        <header className="App-header">
-          <img src={'./blackburnian.png'} className="App-logo" alt="logo" />
-          <p>
-            Welcome to Thomas Cantwell's Portfolio
-          </p>
-        </header>
+          <header className="App-header">
+            <img src={'./blackburnian.png'} className="App-logo" alt="logo" />
+            <p>
+              Welcome to Thomas Cantwell's Portfolio
+            </p>
+          </header>
+          <main>
+            <Route path="/projects" exact render={() =>
+             <ProjectContainer/>
+            } />
+            <Route path="/resume" exact render={() =>
+             <Resume/>
+            } />
+            <Route path="/blogs" exact render={() =>
+             <ProjectDisplay/>
+            } />
+           <Route path="/" exact render={() =>
+             <ProjectContainer/>
+            } />
+          </main>
         </Router>
       </div>
     );
