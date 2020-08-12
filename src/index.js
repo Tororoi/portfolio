@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
+import data from './data'
 
 // redux dependencies
 import { createStore, combineReducers } from 'redux'
@@ -14,7 +15,9 @@ import {BrowserRouter} from 'react-router-dom'
 let initialState = {
   // Change the key-value pairs here
   night: false,
-  hello: "From inside the state"
+  hello: "From inside the state",
+  projects: [...data.projects],
+  blogs: [...data.blogs]
 }
 
 // if an action gets dispatched, that action will be ran through all of the reducers
