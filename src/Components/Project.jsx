@@ -8,22 +8,22 @@ import {connect} from 'react-redux'
 const Project = (props) => {
 
     const handleClick = (e) => {
-        // console.log(props.project)
-        props.projectDispatch(props.project)
+        console.log(props.project.image)
+        // props.projectDispatch(props.project)
     }
 
     return (
         <>
         <div className="project-card">
-            <NavLink to="/project">
             <div className="project">
                 <img
                     src={props.project.image}
                     alt={props.project.title}
+                    style={{width: "70%"}}
                     onClick={handleClick}
                 />
+                <h3>{props.project.title}</h3>
             </div>
-            </NavLink>
         </div>
         </>
     )

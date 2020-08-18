@@ -69,3 +69,17 @@
 .nav .navlink:hover {
   background-color: rgb(241, 111, 24);
 }
+
+.project-container {
+  display: flex;
+}
+
+.project-card {
+  border: 2px solid red;
+  margin: 3%;
+
+}
+
+.project h3 {
+  font-weight: 600;
+}

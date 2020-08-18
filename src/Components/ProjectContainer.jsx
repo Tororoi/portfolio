@@ -6,17 +6,17 @@ import {connect} from 'react-redux'
 //Parents: App
 
 const ProjectContainer = (props) => {
-    // const projectArray = props.projects.map((project) => {
-    //     return <Project
-    //         key={project.id}
-    //         project={project}
-    //         />
-    // })
+    const projectArray = props.projects.map((project) => {
+        return <Project
+            key={project.id}
+            project={project}
+            />
+    })
 
     return (
         <>
             <div className="project-container">
-                {/* {projectArray} */}
+                {projectArray}
             </div>
         </>
     )
