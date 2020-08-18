@@ -1,8 +1,19 @@
 {
-    "projects": {
-
-    },
-    "blogs": {
+    "projects": [
+        {
+            "title": "PixTile",
+            "description": "Drawing app for creating seamless repeating patterns",
+            "url": "https://www.pix-tile.com/",
+            "image": "./public/pixtile_thumb.png"
+        },
+        {
+            "title": "Snail Racing",
+            "description": "Racing game with custom characters and betting",
+            "url": "https://cryptic-badlands-26813.herokuapp.com/",
+            "image": "./public/snailrace_thumb.png"
+        }
+    ],
+    "blogs": [
         
-    }
+    ]
 }
