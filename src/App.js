@@ -41,6 +41,7 @@ class App extends React.Component {
             } />
            <Route path="/" exact render={() =>
              <ProjectContainer/>
+             <BlogContainer/>
             } />
           </main>
         </Router>

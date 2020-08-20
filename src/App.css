@@ -1,9 +1,10 @@
 .App {
   text-align: center;
+  background-color: #282c34;
 }
 
 .App-header {
-  background-color: #282c34;
+  /* background-color: #282c34; */
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -77,7 +78,7 @@
 .project-card {
   border: 2px solid red;
   margin: 3%;
-
+  color: white;
 }
 
 .project h3 {
