@@ -6,17 +6,17 @@ import {connect} from 'react-redux'
 //Parents: App
 
 const BlogContainer = (props) => {
-//     const blogArray = props.blogs.map((blog) => {
-//         return <Blog
-//             key={blog.id}
-//             blog={blog}
-//             />
-//     })
+    const blogArray = props.blogs.map((blog) => {
+        return <Blog
+            key={blog.id}
+            blog={blog}
+            />
+    })
 
     return (
         <>
             <div className="blog-container">
-                {/* {blogArray} */}
+                {blogArray}
             </div>
         </>
     )
