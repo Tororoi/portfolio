@@ -16,6 +16,13 @@
         }
     ],
     "blogs": [
-        
+        {
+            "title": "Animation Series",
+            "url": "https://medium.com/@cantwell.tom/animate-an-8-directional-sprite-part-3-collision-dacb42990f35",
+            "image": ""
+        },
+        {
+
+        }
     ]
 }
