@@ -73,12 +73,27 @@
 
 .project-container {
   display: flex;
+  width: 100%;
 }
 
 .project-card {
-  border: 2px solid red;
-  margin: 3%;
+  /* border: 2px solid red; */
+  border-radius: 16px;
+  margin: 1%;
   color: white;
+  background-color: #505869;
+}
+
+.project {
+  width: 90%;
+  height: 90%;
+  margin: 5%;
+}
+
+.project img {
+  width: 100%;
+  height: 90%;
+  object-fit: cover;
 }
 
 .project h3 {

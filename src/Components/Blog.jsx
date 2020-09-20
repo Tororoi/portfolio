@@ -5,7 +5,7 @@ import {connect} from 'react-redux'
 
 //Parents: ProjectContainer
 
-const Project = (props) => {
+const Blog = (props) => {
 
     const handleClick = (e) => {
         // console.log(props.project)
@@ -14,7 +14,7 @@ const Project = (props) => {
 
     return (
         <>
-        <div className="project-card">
+        {/* <div className="project-card">
             <NavLink to="/project">
             <div className="project">
                 <img
@@ -24,7 +24,7 @@ const Project = (props) => {
                 />
             </div>
             </NavLink>
-        </div>
+        </div> */}
         </>
     )
 };
@@ -40,4 +40,4 @@ const mapDispatchToProps = {
     projectDispatch: chooseProject
 }
 
-export default connect(null, mapDispatchToProps)(Project);
+export default connect(null, mapDispatchToProps)(Blog);

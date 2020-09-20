@@ -8,6 +8,13 @@
             "demo": ""
         },
         {
+            "title": "Pathfinding Visualizer",
+            "description": "A customizable visualizer for pathfinding algorithms",
+            "url": "https://dreamy-cori-d15ae3.netlify.app/",
+            "image": "/path_visualizer.png",
+            "demo": ""
+        },
+        {
             "title": "Snail Racing",
             "description": "Racing game with custom characters and betting",
             "url": "https://cryptic-badlands-26813.herokuapp.com/",
@@ -20,9 +27,6 @@
             "title": "Animation Series",
             "url": "https://medium.com/@cantwell.tom/animate-an-8-directional-sprite-part-3-collision-dacb42990f35",
             "image": ""
-        },
-        {
-
         }
     ]
 }

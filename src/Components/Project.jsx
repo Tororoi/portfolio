@@ -15,15 +15,16 @@ const Project = (props) => {
     return (
         <>
         <div className="project-card">
-            <div className="project">
-                <img
-                    src={props.project.image}
-                    alt={props.project.title}
-                    style={{width: "70%"}}
-                    onClick={handleClick}
-                />
-                <h3>{props.project.title}</h3>
-            </div>
+            <a href={props.project.url}>
+                <div className="project">
+                    <img
+                        src={props.project.image}
+                        alt={props.project.title}
+                        onClick={handleClick}
+                    />
+                    <h3>{props.project.title}</h3>
+                </div>
+            </a>
         </div>
         </>
     )
