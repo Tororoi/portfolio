@@ -13,15 +13,15 @@ const Maze = (props) => {
 
     const rowArray = props.row.map((cell) => {
 
-            return <Cell
-            key={cell.id}
-            cell={cell}
-            />
+        return <Cell
+        key={cell.id}
+        cell={cell}
+        />
     })
 
     return (
         <>
-        <div className="perspective">
+        <div className="row">
             {rowArray}
         </div>
         </>

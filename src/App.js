@@ -4,6 +4,7 @@ import NavBar from './Components/NavBar'
 import ProjectContainer from './Components/ProjectContainer'
 import Resume from './Components/Resume'
 import BlogContainer from './Components/BlogContainer'
+import Maze from './Components/Maze/Maze'
 
 import {connect} from 'react-redux'
 
@@ -41,6 +42,7 @@ class App extends React.Component {
             } /> */}
            <Route path="/" render={() =>
              <>
+             <Maze/>
              <ProjectContainer/>
              <BlogContainer/>
              </>

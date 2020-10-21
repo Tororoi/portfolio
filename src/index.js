@@ -17,7 +17,8 @@ let initialState = {
   night: false,
   hello: "From inside the state",
   projects: [...data.projects],
-  blogs: [...data.blogs]
+  blogs: [...data.blogs],
+  maze: []
 }
 
 // if an action gets dispatched, that action will be ran through all of the reducers

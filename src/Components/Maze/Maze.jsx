@@ -35,8 +35,14 @@ const targetMarble = (coords) => {
     }
 }
 
+let mapStateToProps = (reduxState) => {
+    return {
+      maze: reduxState.maze
+    }
+}
+
 const mapDispatchToProps = {
     mazeDispatch: targetMarble
 }
 
-export default connect(null, mapDispatchToProps)(Maze);
+export default connect(mapStateToProps, mapDispatchToProps)(Maze);
