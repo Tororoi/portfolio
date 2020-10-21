@@ -7,7 +7,7 @@ import {connect} from 'react-redux'
 
 const ProjectContainer = (props) => {
     const projectArray = props.projects.map((project) => {
-        console.log(props)
+        // console.log(props)
         return <Project
             key={project.id}
             project={project}

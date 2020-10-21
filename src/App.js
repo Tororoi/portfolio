@@ -30,19 +30,19 @@ class App extends React.Component {
             </p>
           </header>
           <main>
-            <Route path="/projects" exact render={() =>
+            {/* <Route path="/projects" exact render={() =>
              <ProjectContainer/>
             } />
             <Route path="/resume" exact render={() =>
              <Resume/>
             } />
-            {/* <Route path="/blogs" exact render={() =>
+            <Route path="/blogs" exact render={() =>
              <BlogContainer/>
             } /> */}
-           <Route path="/" exact render={() =>
+           <Route path="/" render={() =>
              <>
              <ProjectContainer/>
-             {/* <BlogContainer/> */}
+             <BlogContainer/>
              </>
             } />
           </main>

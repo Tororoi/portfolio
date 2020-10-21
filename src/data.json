@@ -27,6 +27,16 @@
             "title": "Animation Series",
             "url": "https://medium.com/@cantwell.tom/animate-an-8-directional-sprite-part-3-collision-dacb42990f35",
             "image": ""
+        },
+        {
+            "title": "Modular RPG Series",
+            "url": "https://medium.com/@cantwell.tom/creating-a-modular-game-in-javascript-part-3-viewport-and-organizing-a-spritesheet-40d3f1a2a144",
+            "image": ""
+        },
+        {
+            "title": "Eller's Maze Algorithm",
+            "url": "https://medium.com/@cantwell.tom/ellers-maze-algorithm-in-javascript-2e5742c1a4cd",
+            "image": ""
         }
     ]
 }

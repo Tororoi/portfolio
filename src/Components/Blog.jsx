@@ -9,35 +9,34 @@ const Blog = (props) => {
 
     const handleClick = (e) => {
         // console.log(props.project)
-        props.projectDispatch(props.project)
+        props.blogDispatch(props.blog)
     }
 
     return (
         <>
-        {/* <div className="project-card">
-            <NavLink to="/project">
-            <div className="project">
-                <img
+        <div className="blog-card">
+            <div className="blog">
+                <h3>{props.blog.title}</h3>
+                {/* <img
                     src={props.project.image}
                     alt={props.project.title}
                     onClick={handleClick}
-                />
+                /> */}
             </div>
-            </NavLink>
-        </div> */}
+        </div>
         </>
     )
 };
 
-const chooseProject = (project) => {
+const chooseBlog = (blog) => {
     return {
-        type: "CHOOSE_PROJECT",
-        payload: project
+        type: "CHOOSE_BLOG",
+        payload: blog
     }
 }
 
 const mapDispatchToProps = {
-    projectDispatch: chooseProject
+    blogDispatch: chooseBlog
 }
 
 export default connect(null, mapDispatchToProps)(Blog);
