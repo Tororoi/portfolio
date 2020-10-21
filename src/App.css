@@ -141,3 +141,127 @@
 .blog h3 {
   font-weight: 600;
 }
+
+/* Maze */
+
+.perspective {
+  background-color: hsla(0,0%,0%,.1);
+  background-image: -webkit-linear-gradient(hsla(0,0%,0%,.1) 2.5%, transparent 2.5%, transparent 97.5%, hsla(0,0%,0%,.1) 97.5%),
+                    -webkit-linear-gradient(left, hsla(0,0%,0%,.1) 2.5%, transparent 2.5%, transparent 97.5%, hsla(0,0%,0%,.1) 97.5%);
+  background-size: 3em 3em;
+  box-shadow: 0 0 0 .1em hsla(0,0%,0%,.2);
+  height: 9em;
+  left: 50%;
+  margin: -7.5em;
+  padding: 3em;
+  position: absolute;
+  top: 50%;
+  width: 192em;
+  -webkit-transform: rotateX(45deg) rotateZ(45deg);
+  -webkit-transform-style: preserve-3d;
+  display: flex;
+  flex-flow: row wrap;
+}
+.row {
+  height: 3em;
+  width: 9em;
+  -webkit-transform-style: preserve-3d;
+}
+.cube,
+.cube:after,
+.cube:before {
+/*     box-shadow: inset 0 0 0 .25em hsla(0,0%,0%,.1); */
+  content: '';
+  float: left;
+  height: 3em;
+  position: absolute;
+  width: 3em;
+/*     -webkit-transition-delay: .05s; */
+}
+/* Top */
+.cube {
+  --colorPrimary-h: 25;
+  --colorPrimary-s: 100%;
+  --colorPrimary-a: 1;
+  --colorBefore-h: calc(var(--colorPrimary-h) - 10);
+  --colorAfter-h: calc(var(--colorPrimary-h) - 5);
+  --colorPrimary: hsl(var(--colorPrimary-h), var(--colorPrimary-s), 50%, var(--colorPrimary-a));
+  --colorBefore: hsl(var(--colorBefore-h), var(--colorPrimary-s), 30%, var(--colorPrimary-a));
+  --colorAfter: hsl(var(--colorAfter-h), var(--colorPrimary-s), 40%, var(--colorPrimary-a));
+  background-color: var(--colorPrimary);
+  position: relative;
+  -webkit-transform: translateZ(3em);
+  -webkit-transform-style: preserve-3d;
+}
+/* Left */
+.cube:after {
+  background-color: var(--colorAfter);
+  -webkit-transform: rotateX(-90deg) translateY(3em);
+  -webkit-transform-origin: 100% 100%;
+  -webkit-transition: transform 3s;
+}
+/* Right */
+.cube:before {
+  background-color: var(--colorBefore);
+  -webkit-transform: rotateY(90deg) translateX(3em);
+  -webkit-transform-origin: 100% 0;
+}
+.cube:hover {
+--colorPrimary-h: 10;
+}
+/* .cube:hover:after {
+-webkit-transform: rotateX(90deg) translateY(3em);
+} */
+/* Alternate Colour */
+/* .cube:nth-child(even) {
+  background-color: transparent;
+}
+.cube:nth-child(even):after {
+  background-color: transparent;
+}
+.cube:nth-child(even):before {
+  background-color: transparent;
+} */
+/* Animation */
+@-webkit-keyframes fromRight {
+  0% { -webkit-transform: translateY(-3em) translateZ(3em); }
+}
+@-webkit-keyframes fromLeft {
+  0% { -webkit-transform: translateX(-3em) translateZ(3em); }
+}
+@-webkit-keyframes fromBelow {
+  50% { -webkit-transform: translateZ(0.1em); }
+}
+@-webkit-keyframes rotate {
+  0% { -webkit-transform: rotateX(45deg) rotateY(0deg) rotateZ(405deg); }
+}
+/* .perspective {
+  -webkit-animation: rotate 9s linear infinite;
+} */
+/* .cube:nth-child(1) {
+  -webkit-animation: fromBelow 1s ease-in-out 0s infinite both;
+}
+.cube:nth-child(2) {
+  -webkit-animation: fromBelow 1s ease-in-out 0.3s infinite both;
+}
+.cube:nth-child(3) {
+  -webkit-animation: fromBelow 1s ease-in-out 0.6s infinite both;
+}
+.cube:nth-child(4) {
+  -webkit-animation: fromBelow 1s ease-in-out 0.9s infinite both;
+}
+.cube:nth-child(5) {
+  -webkit-animation: fromBelow 1s ease-in-out 1.2s infinite both;
+}
+.cube:nth-child(6) {
+  -webkit-animation: fromBelow 1s ease-in-out 1.5s infinite both;
+}
+.cube:nth-child(7) {
+  -webkit-animation: fromBelow 1s ease-in-out 1.8s infinite both;
+}
+.cube:nth-child(8) {
+  -webkit-animation: fromBelow 1s ease-in-out 2.1s infinite both;
+}
+.cube:nth-child(9) {
+  -webkit-animation: fromBelow 1s ease-in-out 2.4s infinite both;
+}​ */

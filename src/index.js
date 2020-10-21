@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import data from './data'
+import grid from './maze'
 
 // redux dependencies
 import { createStore, combineReducers } from 'redux'
@@ -18,7 +19,7 @@ let initialState = {
   hello: "From inside the state",
   projects: [...data.projects],
   blogs: [...data.blogs],
-  maze: []
+  maze: grid
 }
 
 // if an action gets dispatched, that action will be ran through all of the reducers

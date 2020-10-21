@@ -21,7 +21,7 @@ const Maze = (props) => {
 
     return (
         <>
-        <div className="row">
+        <div className="row" style={{width: `calc(${props.row.length} * 3em)`}}>
             {rowArray}
         </div>
         </>

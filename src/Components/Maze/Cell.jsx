@@ -13,7 +13,7 @@ const Maze = (props) => {
 
     return (
         <>
-        <div className="cube">
+        <div className="cube" style={props.cell.color === "transparent" ? {'--colorPrimary-a': "transparent"} : {}}>
         </div>
         </>
     )

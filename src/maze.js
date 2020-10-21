@@ -9,6 +9,8 @@ let tileSize = 16;
 offScreenCVS.width = 64;
 offScreenCVS.height = 64;
 
+let grid = [];
+
 // Eller's algorithm
 function generateEllerMaze() {
     offScreenCTX.fillStyle = "black";
@@ -118,13 +120,14 @@ function generateEllerMaze() {
             }
         })
         j+=2;
-        // source = offScreenCVS.toDataURL();
+        if (j < cells.length) {
+            recursiveDrawMaze();
+        }
     }
     recursiveDrawMaze();
 }
 
-function translateImageTo2DArray() {
-    let grid = [];
+function get2DArray() {
       //Make the 2D array to hold all objects
     for (let i=0; i<offScreenCVS.height; i++) {
         grid[i] = [];
@@ -147,3 +150,8 @@ function translateImageTo2DArray() {
         }
     }
 }
+
+generateEllerMaze();
+get2DArray();
+
+export default grid;
