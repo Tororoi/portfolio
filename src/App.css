@@ -156,6 +156,7 @@
   margin: -7.5em;
   padding: 50px;
   position: absolute;
+  z-index: 1;
   top: -70%;
   width: calc(50 * 64px);
   -webkit-transform: rotateX(45deg) rotateZ(45deg);
@@ -218,8 +219,8 @@
   -webkit-transform-origin: right top;
 }
 .cube:hover {
---colorPrimary-h: 10;
---colorPrimary-a: 0.5;
+--colorPrimary-h: 100;
+--colorPrimary-a: 0.4;
 }
 /* .cube:hover:after {
 -webkit-transform: rotateX(90deg) translateY(3em);
