@@ -20,6 +20,7 @@ class App extends React.Component {
   render(){
     return (
       <div className="App">
+        <Maze/>
         <Router>
           <div className="navbar">
             <NavBar/>
@@ -42,7 +43,6 @@ class App extends React.Component {
             } /> */}
            <Route path="/" render={() =>
              <>
-             <Maze/>
              <ProjectContainer/>
              <BlogContainer/>
              </>
