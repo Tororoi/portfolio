@@ -20,7 +20,7 @@ class App extends React.Component {
   render(){
     return (
       <div className="App">
-        <Maze/>
+        {/* <Maze/> */}
         <Router>
           <div className="navbar">
             <NavBar/>
